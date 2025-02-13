@@ -44,6 +44,7 @@ use xcm_executor::{
     traits::{JustTry, WithOriginFilter},
     Config, XcmExecutor,
 };
+use hex_literal::hex;
 
 parameter_types! {
     pub RelayNetwork: NetworkId = XcmInfo::relay_network().unwrap_or(NetworkId::Kusama);
